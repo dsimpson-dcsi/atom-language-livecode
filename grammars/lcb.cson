@@ -11,6 +11,9 @@
     'include': '#comment-line'
   }
   {
+    'include': '#comment-number-sign'
+  }
+  {
     'include': '#comment-block'
   }
   {
@@ -92,6 +95,14 @@
     'beginCaptures':
       '0':
         'name': 'punctuation.definition.comment.double-dash.lcb'
+    'end': '\\n'
+    'name': 'comment.line.lcb'
+
+  'comment-number-sign':
+    'begin': '#'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.number-sign.lcb'
     'end': '\\n'
     'name': 'comment.line.lcb'
 
